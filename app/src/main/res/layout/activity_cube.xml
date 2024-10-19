@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context="shapes.cube">
+
+    <TextView
+        android:id="@+id/cube_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CUBE VOLUME"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/cube_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please Enter The Side Length"
+        android:textColorHint="@color/white"
+        android:textSize="25sp"
+        android:inputType="number"
+        android:textColor="@color/white"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cube_text" />
+
+    <Button
+        android:id="@+id/button_cube"
+        android:layout_width="179dp"
+        android:layout_height="64dp"
+        android:text="CALCULATE"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cube_edittext"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/cube_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="_____"
+        android:textColor="@color/white"
+        android:textSize="42sp"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_cube" />
+</androidx.constraintlayout.widget.ConstraintLayout>
